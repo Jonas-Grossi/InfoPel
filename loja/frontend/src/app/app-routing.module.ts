@@ -4,6 +4,8 @@ import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
 import { ClientCrudComponent } from "./views/client-crud/client-crud.component";
 import { FornecedorCrudComponent } from "./views/fornecedor-crud/fornecedor-crud.component";
+import {ProductCreateComponent} from './components/product/product-create/product-create.component'
+
 const routes: Routes = [
   {
 path:"",
@@ -13,6 +15,11 @@ component: HomeComponent
   path:"products",
   component:ProductCrudComponent
 },{
+path:"products/create",
+component:ProductCreateComponent
+
+}
+,{
   path:"client",
 component:ClientCrudComponent
 },{path:"fornecedor",

@@ -16,7 +16,9 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ClientCrudComponent } from './views/client-crud/client-crud.component';
 import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud.component';
-
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
     HomeComponent,
     ProductCrudComponent,
     ClientCrudComponent,
-    FornecedorCrudComponent
+    FornecedorCrudComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +38,9 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
-
+    MatButtonModule,
+    MatCardModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
