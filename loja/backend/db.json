@@ -1,21 +1,34 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "caneta BIC Preta",
-            "prince": 5.89
-        },
-        {
-            "id": 2,
-            "name": "Notebook Mac Pro",
-            "prince": 1200.89
-        },
-        {
-            "id": 3,
-            "name": "Samsung s20+",
-            "prince": 5000.89
-        }
-        
-        
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": 1200.89
+    },
+    {
+      "id": 3,
+      "name": "Samsung s20+",
+      "price": 5000.89
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 4
+    },
+    {
+      "name": "test",
+      "price": "105",
+      "id": 5
+    },
+    {
+      "name": "carla",
+      "price": "10000000",
+      "id": 6
+    }
+  ]
 }
