@@ -29,6 +29,16 @@
       "name": "carla",
       "price": "10000000",
       "id": 6
+    },
+    {
+      "name": "summer",
+      "price": "120000",
+      "id": 7
+    },
+    {
+      "name": "cobertor",
+      "price": "50",
+      "id": 8
     }
   ]
 }
