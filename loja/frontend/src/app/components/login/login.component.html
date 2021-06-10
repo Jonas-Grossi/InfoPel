@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input  matInput placeholder="Usuário" type="text" class="validate" >
+            </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" type="password" class="validate">
+        </mat-form-field>
+
+
+    </form>
+
+    <button mat-raised-button (click)="logar()" type="submit" name="action" color="primary">
+        Logar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

@@ -1,4 +1,10 @@
 {
+  "login": [
+    {
+      "user": "jonas",
+      "pass": "123"
+    }
+  ],
   "products": [
     {
       "id": 2,
@@ -11,29 +17,24 @@
       "price": 5000.89
     },
     {
-      "name": "test",
-      "price": "105",
-      "id": 5
-    },
-    {
       "name": "carla",
       "price": "10000000.1",
       "id": 6
     },
     {
       "name": "summer",
-      "price": "120000",
+      "price": "5",
       "id": 7
-    },
-    {
-      "name": "cobertor",
-      "price": "10",
-      "id": 8
     },
     {
       "name": "gus",
       "price": "22",
       "id": 9
+    },
+    {
+      "name": "carlinha",
+      "price": "100000000000000000000",
+      "id": 10
     }
   ]
 }

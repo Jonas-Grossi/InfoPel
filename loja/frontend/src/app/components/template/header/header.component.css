@@ -9,7 +9,7 @@ align-items: center;
 display: flex;
 align-items: center;
 text-decoration: none;
-
+color: #333;
 }
 
 .header .logo{
@@ -26,3 +26,8 @@ padding-left: 25px;
     padding-right: 5px;
     
     }
+
+.header .title-logout {
+    padding-left: 1100px;
+
+}
