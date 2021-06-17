@@ -33,6 +33,7 @@ import {CommonModule, registerLocaleData} from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { LoginComponent } from './components/login/login.component';
+import { AuthService } from './components/login/auth.service';
 
 registerLocaleData(localePt);
 @NgModule({
@@ -73,7 +74,10 @@ registerLocaleData(localePt);
     CommonModule
 
   ],
-  providers: [{
+
+
+  
+  providers: [AuthService,{
 provide: LOCALE_ID,
 useValue:'pt-BR'
 

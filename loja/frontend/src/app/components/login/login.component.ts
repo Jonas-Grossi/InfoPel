@@ -1,5 +1,8 @@
+import { AuthService } from './auth.service';
+import './login.component.css';
+import { Login } from './login.model';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
@@ -7,24 +10,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
-  });
-  
-  constructor(private router: Router) { }
+  login: Login = {
+    user: '',
+    pass: ''
+  }
+
+  constructor(private router: Router, private authService: AuthService) { }
 
   ngOnInit(): void {
   }
-  logar(): void{
-         
-    
-    }
+  logar(): void {
 
-    cancel(): void{
+    this.authService.fazerlogin(this.login.user, this.login.pass)
 
-      this.router.navigate(['/'])
 
-}
+  }
+
+  cancel(): void {
+
+    this.router.navigate(['/login'])
+
+  }
 
 }

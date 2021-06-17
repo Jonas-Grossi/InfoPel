@@ -1,9 +1,16 @@
 {
-  "login": [
+  "logins": [
     {
+      
       "user": "jonas",
       "pass": "123"
-    }
+    },
+    {
+    
+    "user": "teste",
+    "pass": "1234"
+  }
+
   ],
   "products": [
     {
@@ -35,6 +42,21 @@
       "name": "carlinha",
       "price": "100000000000000000000",
       "id": 10
+    },
+    {
+      "name": "ajsdkas",
+      "price": "060",
+      "id": 12
+    },
+    {
+      "name": "asdasbdhasd",
+      "price": "0.5",
+      "id": 13
+    },
+    {
+      "name": "tets",
+      "price": "0.64",
+      "id": 14
     }
   ]
 }
