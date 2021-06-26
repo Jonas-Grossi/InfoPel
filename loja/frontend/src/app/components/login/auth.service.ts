@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Login } from './login.model';
 import { LoginService } from './login.service';
-import { LoginComponent } from './login.component';
+import {  EventEmitter } from '@angular/core';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,8 +14,9 @@ export class AuthService {
   logins: Login[] = [];
 
 
+  private userAutentication: boolean = false
+  showMenuEmmitter = new EventEmitter<boolean>()
 
-  //private usuarioAutenticado: boolean = false
 
 
 
@@ -25,35 +27,29 @@ export class AuthService {
     private route: ActivatedRoute) { }
 
 
-    ngOnInit(): void {
-    
-      
-  
-  
-    
-    }
 
 
-  fazerlogin(usuario: any,senha: any): void {
+  fazerlogin(usuario: any, senha: any): void {
     this.loginService.read().subscribe(logins => {
       this.logins = logins
-        
-      //console.log(logins)
-    })
-        let bancoLogin =JSON.stringify(this.logins)
-    
-    
-    if(bancoLogin.indexOf(usuario) > -1 &&  bancoLogin.indexOf(senha) > -1 ) {
-      this.loginService.showMessage("Logando....")
+
       
+    })
+    let bancoLogin = JSON.stringify(this.logins)
+
+
+    if (bancoLogin.indexOf(usuario) > -1 && bancoLogin.indexOf(senha) > -1) {
+      this.loginService.showMessage("Logando....")
+      this.userAutentication = true
+      this.showMenuEmmitter.emit(true)
       this.router.navigate(['/'])
-          }else{
+    } else {
 
-            this.loginService.showMessage("Usuario ou Senha invalidos....")
-
-
+      this.loginService.showMessage("Usuario ou Senha invalidos....")
+      this.userAutentication = false
+      this.showMenuEmmitter.emit(false)
     }
-    
+
   }
 
 
