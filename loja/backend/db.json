@@ -1,16 +1,13 @@
 {
   "logins": [
     {
-      
       "user": "jonas",
       "pass": "123"
     },
     {
-    
-    "user": "teste",
-    "pass": "1234"
-  }
-
+      "user": "teste",
+      "pass": "1234"
+    }
   ],
   "products": [
     {
@@ -57,6 +54,35 @@
       "name": "tets",
       "price": "0.64",
       "id": 14
+    },
+    {
+      "name": "nego",
+      "price": "125",
+      "id": 15
+    }
+  ],
+  "providers": [
+    {
+      "name": "Guilherme",
+      "product": "festas",
+      "id": 1
+    },
+    {
+      "name": "Diego",
+      "product": "informatica",
+      "id": 2
+    }
+  ],
+  "clients": [
+    {
+      "name": "Tobias",
+      "cel": "329845251",
+      "id": 1
+    },
+    {
+      "name": "Carla",
+      "cel": "329845115",
+      "id": 2
     }
   ]
 }

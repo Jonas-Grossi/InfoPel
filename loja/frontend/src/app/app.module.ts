@@ -34,6 +34,9 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthService } from './components/login/auth.service';
+import { ProviderReadComponent } from './components/provider/provider-read/provider-read.component';
+import { ClientReadComponent } from './components/client/client-read/client-read.component';
+
 
 registerLocaleData(localePt);
 @NgModule({
@@ -51,7 +54,10 @@ registerLocaleData(localePt);
     ProductRead2Component,
     ProductUpdateComponent,
     ProductDeleteComponent,
-    LoginComponent
+    LoginComponent,
+    ProviderReadComponent,
+    ClientReadComponent,
+    
     
   ],
   imports: [
