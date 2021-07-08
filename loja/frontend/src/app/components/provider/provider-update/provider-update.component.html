@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Alterar Fornecedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Fornecedor" [(ngModel)]="provider.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Produto" [(ngModel)]="provider.product" name="product">
+        </mat-form-field>
+
+
+    </form>
+
+    <button mat-raised-button (click)="updateProvider()" color="primary">
+        Atualizar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Novo Fornecedor</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="provider.name" name="name" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Produto" [(ngModel)]="provider.product" name="product">
+        </mat-form-field>
+
+
+    </form>
+
+    <button mat-raised-button (click)="createProvider()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

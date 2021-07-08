@@ -36,6 +36,12 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthService } from './components/login/auth.service';
 import { ProviderReadComponent } from './components/provider/provider-read/provider-read.component';
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ProviderCreateComponent } from './components/provider/provider-create/provider-create.component';
+import { ProviderDeleteComponent } from './components/provider/provider-delete/provider-delete.component';
+import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
+import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
 
 
 registerLocaleData(localePt);
@@ -57,6 +63,12 @@ registerLocaleData(localePt);
     LoginComponent,
     ProviderReadComponent,
     ClientReadComponent,
+    ClientCreateComponent,
+    ProviderCreateComponent,
+    ProviderDeleteComponent,
+    ProviderUpdateComponent,
+    ClientDeleteComponent,
+    ClientUpdateComponent,
     
     
   ],

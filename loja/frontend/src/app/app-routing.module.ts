@@ -8,6 +8,12 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { LoginComponent } from './components/login/login.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
+import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
+import { ProviderCreateComponent } from './components/provider/provider-create/provider-create.component';
+import { ProviderDeleteComponent } from './components/provider/provider-delete/provider-delete.component';
   
 
 const routes: Routes = [
@@ -42,9 +48,37 @@ const routes: Routes = [
     path: "client",
     component: ClientCrudComponent
   }, {
+    path: "client/create",
+    component: ClientCreateComponent
+
+  },
+  {
+    path: "client/update/:id",
+    component: ClientUpdateComponent
+
+  },
+  {
+    path: "client/delete/:id",
+    component: ClientDeleteComponent
+
+  }, {
     path: "fornecedor",
     component: FornecedorCrudComponent
-  }
+  }, {
+    path: "provider/create",
+    component: ProviderCreateComponent
+
+  },
+  {
+    path: "provider/update/:id",
+    component: ProviderUpdateComponent
+
+  },
+  {
+    path: "provider/delete/:id",
+    component: ProviderDeleteComponent
+
+  },
 ];
 
 @NgModule({

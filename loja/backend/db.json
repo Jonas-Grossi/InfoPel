@@ -11,11 +11,6 @@
   ],
   "products": [
     {
-      "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": "1200.36"
-    },
-    {
       "id": 3,
       "name": "Samsung s20+",
       "price": 5000.89
@@ -59,11 +54,16 @@
       "name": "nego",
       "price": "125",
       "id": 15
+    },
+    {
+      "name": "testess",
+      "price": "25",
+      "id": 16
     }
   ],
   "providers": [
     {
-      "name": "Guilherme",
+      "name": "Guilherme2",
       "product": "festas",
       "id": 1
     },
@@ -71,11 +71,31 @@
       "name": "Diego",
       "product": "informatica",
       "id": 2
+    },
+    {
+      "name": "carla",
+      "product": "shampo",
+      "id": 3
+    },
+    {
+      "name": "carla",
+      "product": "shampo",
+      "id": 4
+    },
+    {
+      "name": "nego",
+      "product": "carro",
+      "id": 5
+    },
+    {
+      "name": "negoo",
+      "product": "teste",
+      "id": 6
     }
   ],
   "clients": [
     {
-      "name": "Tobias",
+      "name": "Tobias2",
       "cel": "329845251",
       "id": 1
     },
@@ -83,6 +103,21 @@
       "name": "Carla",
       "cel": "329845115",
       "id": 2
+    },
+    {
+      "name": "jonas",
+      "cel": "jonasgrossicc@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "jonas",
+      "cel": "jonasgrossicc@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "jonas",
+      "cel": "840521888",
+      "id": 5
     }
   ]
 }
