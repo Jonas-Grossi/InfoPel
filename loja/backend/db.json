@@ -118,6 +118,20 @@
       "name": "jonas",
       "cel": "840521888",
       "id": 5
+    },
+    {
+      "employees": [
+        {
+          "name": "funcionario 1",
+          "type": "Informatica",
+          "id": 1
+        },
+        {
+          "name": "funcionario 2",
+          "type": "Atendente",
+          "id": 2
+        }
+      ]
     }
   ]
 }

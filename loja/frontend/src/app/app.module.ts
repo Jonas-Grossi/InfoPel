@@ -42,6 +42,10 @@ import { ProviderDeleteComponent } from './components/provider/provider-delete/p
 import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
 import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
+import { EmployeeReadComponent } from './components/employee/employee-read/employee-read.component';
+import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
+
+
 
 
 registerLocaleData(localePt);
@@ -69,6 +73,8 @@ registerLocaleData(localePt);
     ProviderUpdateComponent,
     ClientDeleteComponent,
     ClientUpdateComponent,
+    EmployeeReadComponent,
+    EmployeeCreateComponent
     
     
   ],

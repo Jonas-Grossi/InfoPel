@@ -14,6 +14,8 @@ import { ClientDeleteComponent } from './components/client/client-delete/client-
 import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
 import { ProviderCreateComponent } from './components/provider/provider-create/provider-create.component';
 import { ProviderDeleteComponent } from './components/provider/provider-delete/provider-delete.component';
+import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
+import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
   
 
 const routes: Routes = [
@@ -78,7 +80,15 @@ const routes: Routes = [
     path: "provider/delete/:id",
     component: ProviderDeleteComponent
 
-  },
+  },{
+    path: "employee",
+    component: EmployeeCrudComponent
+
+  },{
+    path: "employee/create",
+    component: EmployeeCreateComponent
+
+  }
 ];
 
 @NgModule({
