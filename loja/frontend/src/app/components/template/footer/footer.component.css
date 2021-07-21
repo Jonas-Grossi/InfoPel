@@ -1,9 +1,10 @@
 .footer{
 
-position: fixed;
+position:absolute;
 bottom: 0;
 display: flex;
 justify-content: flex-end;
+align-items: flex-end;
 }
 
 .footer >span{

@@ -1,13 +1,16 @@
-import { Employee } from './employee.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { EMPTY, Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { Funcionario } from './funcionario.model';
+
+
+
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeService {
+export class FuncionarioService {
   baseUrl = "http://localhost:3001/employees"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
@@ -21,9 +24,9 @@ export class EmployeeService {
 
     })
   }
-  create(employee: Employee): Observable<Employee> {
+  create(funcionario: Funcionario): Observable<Funcionario> {
 
-    return this.http.post<Employee>(this.baseUrl, employee).pipe(map((obj) => obj),
+    return this.http.post<Funcionario>(this.baseUrl, funcionario).pipe(map((obj) => obj),
       catchError(e => this.errorHandler(e))
 
     )
@@ -31,26 +34,26 @@ export class EmployeeService {
 
   
 
-  read(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(this.baseUrl).pipe(map((obj) => obj),
+  read(): Observable<Funcionario[]> {
+    return this.http.get<Funcionario[]>(this.baseUrl).pipe(map((obj) => obj),
     catchError(e => this.errorHandler(e))
 
   )
 
   }
 
-  readById(id: any): Observable<Employee> {
+  readById(id: any): Observable<Funcionario> {
     const url = `${this.baseUrl}/${id}`
-    return this.http.get<Employee>(url).pipe(map((obj) => obj),
+    return this.http.get<Funcionario>(url).pipe(map((obj) => obj),
     catchError(e => this.errorHandler(e))
 
   )
 
   }
 
-  update(employee: Employee): Observable<Employee> {
-    const url = `${this.baseUrl}/${employee.id}`
-    return this.http.put<Employee>(url, employee).pipe(map((obj) => obj),
+  update(funcionario: Funcionario): Observable<Funcionario> {
+    const url = `${this.baseUrl}/${funcionario.id}`
+    return this.http.put<Funcionario>(url, funcionario).pipe(map((obj) => obj),
     catchError(e => this.errorHandler(e))
 
   )
@@ -58,10 +61,10 @@ export class EmployeeService {
 
   }
 
-  delete(id: any): Observable<Employee> {
+  delete(id: any): Observable<Funcionario> {
 
     const url = `${this.baseUrl}/${id}`
-    return this.http.delete<Employee>(url).pipe(map((obj) => obj),
+    return this.http.delete<Funcionario>(url).pipe(map((obj) => obj),
     catchError(e => this.errorHandler(e))
 
   )

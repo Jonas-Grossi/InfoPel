@@ -11,6 +11,7 @@ export class HeaderService {
     title: 'Inicio',
     icon: 'home',
     icon2: 'logout',
+    
     routeUrl: ''
 
   })

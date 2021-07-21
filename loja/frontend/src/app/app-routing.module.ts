@@ -14,8 +14,10 @@ import { ClientDeleteComponent } from './components/client/client-delete/client-
 import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
 import { ProviderCreateComponent } from './components/provider/provider-create/provider-create.component';
 import { ProviderDeleteComponent } from './components/provider/provider-delete/provider-delete.component';
-import { EmployeeCrudComponent } from './views/employee-crud/employee-crud.component';
-import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
+import { FuncionariosCrudComponent } from './views/funcionarios-crud/funcionarios-crud.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
+import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
+import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
   
 
 const routes: Routes = [
@@ -81,12 +83,22 @@ const routes: Routes = [
     component: ProviderDeleteComponent
 
   },{
-    path: "employee",
-    component: EmployeeCrudComponent
+    path: "funcionarios",
+    component: FuncionariosCrudComponent
 
-  },{
-    path: "employee/create",
-    component: EmployeeCreateComponent
+  }, {
+    path: "funcionarios/create",
+    component: FuncionarioCreateComponent
+
+  },
+  {
+    path: "funcionarios/update/:id",
+    component: FuncionarioUpdateComponent
+
+  },
+  {
+    path: "funcionarios/delete/:id",
+    component: FuncionarioDeleteComponent
 
   }
 ];

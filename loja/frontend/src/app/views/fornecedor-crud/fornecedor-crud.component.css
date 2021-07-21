@@ -3,3 +3,14 @@ button{
     margin-bottom: 30px;
     
     }
+    .pesquisar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex;
+      }
+
+      .material-icons{
+        position: fixed; 
+       padding-left: 75%;
+       
+     }

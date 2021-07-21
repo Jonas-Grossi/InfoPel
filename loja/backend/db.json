@@ -13,22 +13,12 @@
     {
       "id": 3,
       "name": "Samsung s20+",
-      "price": 5000.89
-    },
-    {
-      "name": "carla",
-      "price": "10000000.1",
-      "id": 6
+      "price": "5600"
     },
     {
       "name": "summer",
       "price": "5",
       "id": 7
-    },
-    {
-      "name": "gus",
-      "price": "22",
-      "id": 9
     },
     {
       "name": "carlinha",
@@ -46,19 +36,9 @@
       "id": 13
     },
     {
-      "name": "tets",
-      "price": "0.64",
+      "name": "ajsdkas",
+      "price": "022",
       "id": 14
-    },
-    {
-      "name": "nego",
-      "price": "125",
-      "id": 15
-    },
-    {
-      "name": "testess",
-      "price": "25",
-      "id": 16
     }
   ],
   "providers": [
@@ -118,20 +98,43 @@
       "name": "jonas",
       "cel": "840521888",
       "id": 5
+    }
+  ],
+  "employees": [
+    {
+      "name": "funcionario 1",
+      "type": "Informatica",
+      "id": 1
     },
     {
-      "employees": [
-        {
-          "name": "funcionario 1",
-          "type": "Informatica",
-          "id": 1
-        },
-        {
-          "name": "funcionario 2",
-          "type": "Atendente",
-          "id": 2
-        }
-      ]
+      "name": "funcionario 2",
+      "type": "Atendente",
+      "id": 2
+    },
+    {
+      "name": "carlinhaaa",
+      "type": "bb",
+      "id": 3
+    },
+    {
+      "name": "jonas",
+      "type": "123456",
+      "id": 4
+    },
+    {
+      "name": "",
+      "type": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "type": "",
+      "id": 6
+    },
+    {
+      "name": "testetetetetetetetete",
+      "type": "trabalhador",
+      "id": 7
     }
   ]
 }

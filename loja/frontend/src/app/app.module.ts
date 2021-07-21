@@ -42,8 +42,11 @@ import { ProviderDeleteComponent } from './components/provider/provider-delete/p
 import { ProviderUpdateComponent } from './components/provider/provider-update/provider-update.component';
 import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
-import { EmployeeReadComponent } from './components/employee/employee-read/employee-read.component';
-import { EmployeeCreateComponent } from './components/employee/employee-create/employee-create.component';
+import { FuncionariosCrudComponent } from './views/funcionarios-crud/funcionarios-crud.component';
+import { FuncionarioReadComponent } from './components/funcionario/funcionario-read/funcionario-read.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
+import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
+import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
 
 
 
@@ -73,8 +76,11 @@ registerLocaleData(localePt);
     ProviderUpdateComponent,
     ClientDeleteComponent,
     ClientUpdateComponent,
-    EmployeeReadComponent,
-    EmployeeCreateComponent
+    FuncionariosCrudComponent,
+    FuncionarioReadComponent,
+    FuncionarioCreateComponent,
+    FuncionarioDeleteComponent,
+    FuncionarioUpdateComponent
     
     
   ],
