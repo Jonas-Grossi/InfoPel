@@ -2,14 +2,20 @@
     <mat-card-title>Novo Funcionario</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="funcionario.name" name="name" >
+            <input matInput placeholder="Nome" [(ngModel)]="funcionario.name" name="name">
         </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Tipo" [(ngModel)]="funcionario.type" name="type">
-        </mat-form-field>
-
-
-    </form>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Selecione um Tipo</mat-label>
+            <select matNativeControl [(ngModel)]="selectedValue" name="type">
+              <option value="" selected></option>
+              <option *ngFor="let func of funcs" [value]="func.value">
+                {{func.viewValue}}
+              </option>
+            </select>
+          </mat-form-field>
+          <p> o tipo selecionado é: {{selectedValue}} </p>
+        </form>
 
     <button mat-raised-button (click)="createFuncionario()" color="primary">
         Salvar

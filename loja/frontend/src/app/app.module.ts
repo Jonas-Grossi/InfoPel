@@ -47,7 +47,7 @@ import { FuncionarioReadComponent } from './components/funcionario/funcionario-r
 import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
 import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
 import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
-
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -101,7 +101,8 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    CommonModule
+    CommonModule,
+    MatMenuModule
 
   ],
 

@@ -12,7 +12,7 @@
   "products": [
     {
       "id": 3,
-      "name": "Samsung s20+",
+      "name": "Samsung s20+priscila",
       "price": "5600"
     },
     {
@@ -43,24 +43,9 @@
   ],
   "providers": [
     {
-      "name": "Guilherme2",
-      "product": "festas",
-      "id": 1
-    },
-    {
       "name": "Diego",
       "product": "informatica",
       "id": 2
-    },
-    {
-      "name": "carla",
-      "product": "shampo",
-      "id": 3
-    },
-    {
-      "name": "carla",
-      "product": "shampo",
-      "id": 4
     },
     {
       "name": "nego",
@@ -71,6 +56,11 @@
       "name": "negoo",
       "product": "teste",
       "id": 6
+    },
+    {
+      "name": "carla",
+      "product": "carros de luxo",
+      "id": 7
     }
   ],
   "clients": [
@@ -135,6 +125,46 @@
       "name": "testetetetetetetetete",
       "type": "trabalhador",
       "id": 7
+    },
+    {
+      "name": "jonas gross",
+      "type": "",
+      "id": 8
+    },
+    {
+      "name": "123456jonas",
+      "type": "",
+      "id": 9
+    },
+    {
+      "name": "riverdaleee",
+      "type": "",
+      "id": 10
+    },
+    {
+      "name": "adaptadorr",
+      "type": "",
+      "id": 11
+    },
+    {
+      "name": "adaptadorr",
+      "type": "",
+      "id": 12
+    },
+    {
+      "name": "adaptadorr",
+      "type": "",
+      "id": 13
+    },
+    {
+      "name": "grossi",
+      "type": "Informatica",
+      "id": 14
+    },
+    {
+      "name": "maricota",
+      "type": "Atendente",
+      "id": 15
     }
   ]
 }
