@@ -18,87 +18,115 @@ import { FuncionariosCrudComponent } from './views/funcionarios-crud/funcionario
 import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
 import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
 import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
+import { AuthGuard } from './components/login/auth.guard';
   
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component:RouterModule,
+    canActivate: [AuthGuard] 
+    
+    
+  },{
+    path: "home",
+    component:HomeComponent,
+    canActivate: [AuthGuard] 
+    
+    
   },{
   path: "login",
-    component: LoginComponent
+    component: LoginComponent,
+    
   },
   {
+    
 
     path: "products",
-    component: ProductCrudComponent
+    component: ProductCrudComponent,
+    canActivate: [AuthGuard]
   }, {
     path: "products/create",
-    component: ProductCreateComponent
+    component: ProductCreateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "products/update/:id",
-    component: ProductUpdateComponent
+    component: ProductUpdateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "products/delete/:id",
-    component: ProductDeleteComponent
+    component: ProductDeleteComponent,
+    canActivate: [AuthGuard]
 
   },
   
   {
     path: "client",
-    component: ClientCrudComponent
+    component: ClientCrudComponent,
+    canActivate: [AuthGuard]
   }, {
     path: "client/create",
-    component: ClientCreateComponent
+    component: ClientCreateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "client/update/:id",
-    component: ClientUpdateComponent
+    component: ClientUpdateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "client/delete/:id",
-    component: ClientDeleteComponent
+    component: ClientDeleteComponent,
+    canActivate: [AuthGuard]
 
   }, {
     path: "fornecedor",
-    component: FornecedorCrudComponent
+    component: FornecedorCrudComponent,
+    canActivate: [AuthGuard]
   }, {
     path: "provider/create",
-    component: ProviderCreateComponent
+    component: ProviderCreateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "provider/update/:id",
-    component: ProviderUpdateComponent
+    component: ProviderUpdateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "provider/delete/:id",
-    component: ProviderDeleteComponent
+    component: ProviderDeleteComponent,
+    canActivate: [AuthGuard]
 
   },{
     path: "funcionarios",
-    component: FuncionariosCrudComponent
+    component: FuncionariosCrudComponent,
+    canActivate: [AuthGuard]
 
   }, {
     path: "funcionarios/create",
-    component: FuncionarioCreateComponent
+    component: FuncionarioCreateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "funcionarios/update/:id",
-    component: FuncionarioUpdateComponent
+    component: FuncionarioUpdateComponent,
+    canActivate: [AuthGuard]
 
   },
   {
     path: "funcionarios/delete/:id",
-    component: FuncionarioDeleteComponent
+    component: FuncionarioDeleteComponent,
+    canActivate: [AuthGuard]
 
   }
 ];

@@ -21,11 +21,17 @@ export class ProductCreateComponent implements OnInit {
 
   }
 createProduct(): void{
-      this.productService.create(this.product).subscribe(()=>{
+  if(this.product.name == '' ||  this.product.price == 0 ){
+    this.productService.showMessage('Prencha os dados corretamente!!')
+
+  }else{    
+  this.productService.create(this.product).subscribe(()=>{
+        
         this.productService.showMessage('Produto criado!!')
         this.router.navigate(['/products'])
-      })
-      
+        
+  })
+}    
     }
 
 cancel(): void{

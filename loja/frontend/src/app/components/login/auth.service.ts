@@ -14,7 +14,7 @@ export class AuthService {
   logins: Login[] = [];
 
 
-  private userAutentication: boolean = false
+  public userAutentication: boolean = false
   showMenuEmmitter = new EventEmitter<boolean>()
 
 
@@ -29,7 +29,7 @@ export class AuthService {
 
 
 
-  fazerlogin(usuario: any, senha: any): void {
+  fazerlogin(usuario: string, senha: string): void {
     this.loginService.read().subscribe(logins => {
       this.logins = logins
 
@@ -38,7 +38,7 @@ export class AuthService {
     let bancoLogin = JSON.stringify(this.logins)
 
 
-    if (bancoLogin.indexOf(usuario) > -1 && bancoLogin.indexOf(senha) > -1) {
+    if (bancoLogin.includes(usuario)==true  && bancoLogin.includes(senha)== true) {
       this.loginService.showMessage("Logando....")
       this.userAutentication = true
       this.showMenuEmmitter.emit(true)
@@ -52,6 +52,11 @@ export class AuthService {
 
   }
 
+  userOnAutentication(){
+
+    return this.userAutentication
+
+  }
 
 }
 

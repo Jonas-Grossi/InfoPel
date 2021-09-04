@@ -44,14 +44,18 @@ export class FuncionarioCreateComponent implements OnInit {
   }
   
 createFuncionario(): void{
-  this.funcionario.type = this.selectedValue
+  if(this.funcionario.name == '' ||  this.funcionario.type == '' ){
+    this.funcionarioService.showMessage('Prencha os dados corretamente!!')
+  }else{
+    this.funcionario.type = this.selectedValue
+
   this.funcionarioService.create(this.funcionario).subscribe(()=>{
         this.funcionarioService.showMessage('Funcionario criado!!')
         this.router.navigate(['/funcionarios'])
       })
       
     }
-
+  }
 cancel(): void{
 
       this.router.navigate(['/funcionarios'])

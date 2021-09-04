@@ -21,11 +21,14 @@ export class ProviderCreateComponent implements OnInit {
 
   }
 createProvider(): void{
-      this.providerService.create(this.provider).subscribe(()=>{
+  if(this.provider.name == '' ||  this.provider.product == '' ){
+    this.providerService.showMessage('Prencha os dados corretamente!!')
+  }else{
+  this.providerService.create(this.provider).subscribe(()=>{
         this.providerService.showMessage('Fornecedor criado!!')
         this.router.navigate(['/fornecedor'])
       })
-      
+    }
     }
 
 cancel(): void{

@@ -21,11 +21,15 @@ export class ClientCreateComponent implements OnInit {
 
   }
 createClient(): void{
+  if(this.client.name == '' ||  this.client.cel == '' ){
+
+    this.clientService.showMessage('Prencha os dados corretamente!!')
+  }else{
       this.clientService.create(this.client).subscribe(()=>{
         this.clientService.showMessage('Cliente criado!!')
         this.router.navigate(['/client'])
       })
-      
+    }
     }
 
 cancel(): void{

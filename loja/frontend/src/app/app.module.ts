@@ -48,6 +48,7 @@ import { FuncionarioCreateComponent } from './components/funcionario/funcionario
 import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
 import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { AuthGuard } from './components/login/auth.guard';
 
 
 
@@ -112,7 +113,7 @@ registerLocaleData(localePt);
 provide: LOCALE_ID,
 useValue:'pt-BR'
 
-  }],
+  },AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

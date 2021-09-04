@@ -11,16 +11,6 @@
   ],
   "products": [
     {
-      "id": 3,
-      "name": "Samsung s20+priscila",
-      "price": "5600"
-    },
-    {
-      "name": "summer",
-      "price": "5",
-      "id": 7
-    },
-    {
       "name": "carlinha",
       "price": "100000000000000000000",
       "id": 10
@@ -39,6 +29,56 @@
       "name": "ajsdkas",
       "price": "022",
       "id": 14
+    },
+    {
+      "name": "teste",
+      "price": "10.25",
+      "id": 15
+    },
+    {
+      "name": "teste123",
+      "price": "20",
+      "id": 16
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 17
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 18
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 19
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 20
+    },
+    {
+      "name": "null",
+      "price": 0,
+      "id": 21
+    },
+    {
+      "name": "",
+      "price": 0,
+      "id": 22
+    },
+    {
+      "name": "testeeeee",
+      "price": 0,
+      "id": 23
+    },
+    {
+      "name": "sadasd",
+      "price": "22",
+      "id": 24
     }
   ],
   "providers": [
@@ -165,6 +205,11 @@
       "name": "maricota",
       "type": "Atendente",
       "id": 15
+    },
+    {
+      "name": "Rodrigo",
+      "type": "Informatica",
+      "id": 16
     }
   ]
 }

@@ -1,10 +1,10 @@
+<nav *ngIf="showMenu">
+  
+  <app-header> </app-header>
+  
+  <app-nav></app-nav>
+   
+</nav>
+<app-footer></app-footer>
 
-<!--<ng-template *ngIf="showMenu">-->
-    
-    <app-header> </app-header>
-
-    <app-nav></app-nav>
-
-    <app-footer></app-footer>
- 
-<!--</ng-template>-->
+<router-outlet></router-outlet>
