@@ -44,7 +44,7 @@ export class FuncionarioCreateComponent implements OnInit {
   }
   
 createFuncionario(): void{
-  if(this.funcionario.name == '' ||  this.funcionario.type == '' ){
+  if(this.funcionario.name == '' ){
     this.funcionarioService.showMessage('Prencha os dados corretamente!!')
   }else{
     this.funcionario.type = this.selectedValue

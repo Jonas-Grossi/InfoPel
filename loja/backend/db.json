@@ -11,13 +11,8 @@
   ],
   "products": [
     {
-      "name": "carlinha",
-      "price": "100000000000000000000",
-      "id": 10
-    },
-    {
-      "name": "ajsdkas",
-      "price": "060",
+      "name": "sabonete",
+      "price": "0.25",
       "id": 12
     },
     {
@@ -79,6 +74,11 @@
       "name": "sadasd",
       "price": "22",
       "id": 24
+    },
+    {
+      "name": "sabao em pó",
+      "price": "10",
+      "id": 25
     }
   ],
   "providers": [
@@ -210,6 +210,20 @@
       "name": "Rodrigo",
       "type": "Informatica",
       "id": 16
+    },
+    {
+      "name": "jonas",
+      "id": 17
+    },
+    {
+      "name": "douglas",
+      "type": "Informatica",
+      "id": 18
+    },
+    {
+      "name": "asdjashd",
+      "type": "Informatica",
+      "id": 19
     }
   ]
 }
