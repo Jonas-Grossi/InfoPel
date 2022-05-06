@@ -11,7 +11,8 @@ export class ProductCreateComponent implements OnInit {
   
   product:Product = {
     name:'',
-    price: 0
+    price: 0,
+    price2:0,
   }
   constructor(private productService: ProductService,
   private router: Router){}
@@ -21,7 +22,7 @@ export class ProductCreateComponent implements OnInit {
 
   }
 createProduct(): void{
-  if(this.product.name == '' ||  this.product.price == 0 ){
+  if(this.product.name == '' ||  this.product.price == 0 ||  this.product.price2 == 0 ){
     this.productService.showMessage('Prencha os dados corretamente!!')
 
   }else{    

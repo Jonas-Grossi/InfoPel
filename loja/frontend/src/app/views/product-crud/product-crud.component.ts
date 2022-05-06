@@ -17,7 +17,8 @@ export class ProductCrudComponent implements OnInit {
   myControl = new FormControl();
   options:Product = {
     name:'',
-    price: 0
+    price: 0,
+    price2:0
   }
    
 
